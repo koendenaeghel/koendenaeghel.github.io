@@ -1,0 +1,379 @@
+/*
+ * 1. Global stuff
+ */
+
+* {
+	float:none !important
+}
+
+html {
+	font:normal .8em/1.5em Georgia, serif;
+	color:#111;
+	background:#fff
+}
+
+a {
+	color:#111;
+	text-decoration:underline
+}
+
+/*
+ * 2. Header
+ */
+
+#fw-advertisement {
+	display:none
+}
+
+#fw-head {
+	text-align:center;
+	border-bottom:1px solid #999
+}
+
+#fw-title, #fw-smalltitle, #fw-bigcontain h3 {
+	page-break-after:avoid
+}
+
+#fw-title, #fw-smalltitle {
+	margin:1em 0;
+	font-weight:normal;
+	text-transform:uppercase
+}
+
+#fw-title {
+	font-size:1.7em
+}
+
+#fw-title a {
+	text-decoration:none
+}
+
+#fw-smalltitle {
+	font-size:1.2em;
+	color:#666
+}
+
+/*
+ * 3. Content
+ */
+
+ #fw-mainnavwrap, #wildfire {
+	display:none
+}
+
+#fw-bigcontain h2, #fw-bigcontain h3, .blogTitle, .fwBlogEntryTitle {
+	margin:1.5em 0 .5em !important;
+	font-size:1.2em !important;
+	font-weight:normal !important;
+	text-transform:uppercase !important
+}
+
+#fw-bigcontain h4 {
+	margin:1em 0 .25em;
+	font-size:1em;
+	font-weight:normal
+}
+
+#fw-bigcontain div, #fw-bigcontain p, #fw-bigcontain td {
+	text-align:left !important
+}
+
+#fw-bigcontain a[href]:after {
+	content:' (' attr(href) ')';
+	font-size:.8em
+}
+
+#fw-bigcontain a[href=""]:after {
+	content:''
+}
+
+embed, object {
+	display:block
+}
+
+embed:after, object:after {
+	content:'[Multimedia object]'
+}
+
+/*
+ * 4. Blog
+ */
+
+.blogBody, .fwBlogEntryBody, .fwBlogEntryDisplay {
+	margin:0 !important;
+	padding:0 !important
+}
+
+.fwBlogEntryDisplay * {
+	text-align:left !important
+}
+
+.fwBlogEntryBody {
+	margin-bottom:2em !important
+}
+
+.fwBlogInsideLink {
+	display:block;
+	margin-top:-1em
+}
+
+.fwBlogCommentContainer {
+	margin:0 !important;
+	font-size:1em !important
+}
+
+/*
+ * 5. Profile
+ */
+
+#fw-profile-pic, .fw-profile-title, .fw-profile-basicAction {
+	border:0 !important
+}
+
+#fw-profile-main div {
+	margin:0 !important
+}
+
+.fw-profile-title {
+	padding:0 !important;
+	text-transform:uppercase
+}
+
+.fw-profile-icon {
+	display:none
+}
+
+.fw-profile-basicAction {
+	font-size:1em !important
+}
+
+.fw-profile-basicAction a:after, #fw-profile-favorites a:after, .groupButton:after,
+.memberCard a:after {
+	content:'' !important
+}
+
+#fw-profile-aboutText {
+	padding:1em 0 2em !important
+}
+
+#fw-profile-favorites {
+	margin:0 !important;
+	border-spacing:0
+}
+
+#fw-profile-favorites td {
+	padding:0 3em 0 0 !important;
+	width:auto !important
+}
+
+#fw-profile-favorites a {
+	text-decoration:none
+}
+
+#fw-profile-favorites .personalDetail {
+	text-transform:capitalize
+}
+
+.groupButton, #membersPages {
+	padding:0 !important
+}
+
+.groupButton {
+	font-size:1em !important;
+	font-weight:normal !important
+}
+
+.membersTable {
+	text-align:left !important
+}
+
+form[action$="Profile/search.jsp"] {
+	display:none
+}
+
+#fwComfw-profile-comments-1 * {
+	padding:0 !important;
+	font-weight:normal !important
+}
+
+#fwComfw-profile-comments-1 img {
+	display:none
+}
+
+/*
+ * 6. Comments
+ */
+
+.fw-bbBox {
+	display:none !important
+}
+
+.fwComments * {
+	font-weight:normal !important
+}
+
+.fwComments .commentTable {
+	border:1px solid #999;
+	border-width:0 0 1px
+}
+
+.fwComments .fwCommentsCom {
+	border:0 !important
+}
+
+#fw-profile-comments-1-postLink:after, #fw-profile-comments-1-comLink:after {
+	content:''
+}
+
+/*
+ * 7. Guestbook
+ */
+
+#myguestbook-post {
+	display:none
+}
+
+/*
+ * 8. Photo album
+ */
+
+#albumList div {
+	text-align:center !important
+}
+
+/*
+ * 9. Photo
+ */
+
+.photoFrame td {
+	background:none !important
+}
+
+.photoFrame img {
+	display:none
+}
+
+.photoFrame #photo {
+	display:block
+}
+
+/*
+ * 10. Video
+ */
+
+.videolist .thumbnail a:after {
+	content:'' !important
+}
+
+.fixedHeight {
+	position:relative;
+	left:-10px
+}
+
+#video-div object:after {
+	content:''
+}
+
+#video-div param {
+	display:block
+}
+
+#video-div param[name="movie"]:after {
+	content:'[Video: 'attr(value)']'
+}
+
+.fw-display-footer {
+	border:0 !important
+}
+
+/*
+ * 11. Calendar
+ */
+
+div.navigation {
+	margin:0 !important;
+	border:0 !important
+}
+
+div.navigation u {
+	text-decoration:none
+}
+
+div.navigation table {
+	display:none
+}
+
+.fwcalendar a:after {
+	content:'' !important
+}
+
+.monthname {
+	margin-bottom:1em;
+	padding:0 !important;
+	font-size:1.2em !important;
+	font-weight:normal !important;
+	text-transform:uppercase !important;
+	letter-spacing:0 !important
+}
+
+/*
+ * 12. Store
+ */
+
+#cartHeader a {
+	display:none
+}
+
+#productList a:after, .linkButton:after {
+	content:'' !important
+}
+
+#productCategories {
+	display:none
+}
+
+#productList .productWrapper {
+	text-align:center !important
+}
+
+#productList table {
+	width:100%
+}
+
+.productWrapper {
+	position:relative
+}
+
+.statusBanner {
+	position:absolute;
+	bottom:0;
+	right:0
+}
+
+img.productListView {
+	vertical-align:middle
+}
+
+a.productWrapper {
+	width: 150px;
+	display: block;
+}
+
+/*
+ * 99. Footer
+ */
+
+#fw-footer {
+	margin:2em 0 0;
+	border-top:1px solid #999;
+	text-align:center !important
+}
+
+#fw-footer p {
+	width:100% !important;
+	text-align:center !important
+}
+
+#fw-footer a img {
+	display:none
+}
